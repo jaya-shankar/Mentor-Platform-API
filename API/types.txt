@@ -1,0 +1,24 @@
+
+
+1) get number text messages from a group -student -DONE
+
+2) get data about a particular user( name, no of groups created, no of groups participated) -student -DONE
+
+3) create a group -mentor -DONE
+
+4) post a message in a group but the request must be made by only the creator of the group -mentor  -DONE
+
+5) get number of students in the group -mentor -DONE
+
+6) get group info  -student           -DONE
+
+7) get doubts asked along with in which group they asked -student    -DONE
+
+8) get doubts -mentor
+
+9) get list of all groups - student     -DONE                  
+    
+10) change password ( optional ) -mentor
+
+11) 
+
