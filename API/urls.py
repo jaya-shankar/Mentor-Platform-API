@@ -13,12 +13,11 @@ urlpatterns = [
     path('courses/title/<str:name>/doubts', views.get_doubts_course_view.as_view() , name="courseInfo-name") , 
     path('courses/<int:id>/messages', views.get_messages_view.as_view() , name="courseMsgs-id") , 
     path('courses/title/<str:name>/messages', views.get_messages_view.as_view() , name="courseMsgs-name") , 
-    path('courses/create', views.CreateGroup.as_view() , name="createCourse") , 
     path('users', views.get_users_view.as_view() , name="users") , 
     path('users/<int:id>', views.get_user_info_view.as_view() , name="user") , 
     path('users/username/<str:name>', views.get_user_info_view.as_view() , name="user") , 
     path('users/<int:id>/doubts', views.get_doubts_user_view.as_view() , name="doubts") , 
     path('users/username/<str:name>/doubts', views.get_doubts_user_view.as_view() , name="doubts") , 
-    path('register', views.RegisterUsers_view.as_view() , name="register") , 
+    path('auth', views.login_view.as_view() , name="register") ,
     
 ]

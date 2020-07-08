@@ -83,7 +83,12 @@ class ChatSerializer(serializers.ModelSerializer):
 class RegistrationSerializer(serializers.ModelSerializer):
     class Meta:
         model=User
-        fields=('username','password','email')
+        fields=('username','password','email','first_name','last_name')
+
+class LoginSerializer(serializers.ModelSerializer):
+    class Meta:
+        model=User
+        fields=('username','password')
 
 class DoubtsSerializer(serializers.ModelSerializer):
     sender=serializers.SerializerMethodField()
